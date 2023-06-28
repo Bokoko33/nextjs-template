@@ -1,0 +1,29 @@
+@use '~/styles/base/variables' as *;
+@use '~/styles/base/mixins' as *;
+@use '~/styles/base/functions' as *;
+
+:root {
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  font-family: $font-en, $font-ja, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+
+  color: $color-black;
+  background-color: $color-white; // spのサイドバーの色になる
+}
+
+img,
+svg {
+  width: 100%;
+  height: auto;
+}
+
+:focus-visible {
+  @include focused-outline();
+}

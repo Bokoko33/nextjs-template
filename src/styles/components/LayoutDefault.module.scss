@@ -1,0 +1,11 @@
+@use '~/styles/base/variables' as *;
+@use '~/styles/base/mixins' as *;
+@use '~/styles/base/functions' as *;
+
+.main {
+  padding: 0 #{$padding-side-pc}px;
+
+  @include mq() {
+    padding: 0 #{$padding-side-sp}px;
+  }
+}

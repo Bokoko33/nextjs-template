@@ -1,0 +1,12 @@
+@use '~/styles/base/variables' as *;
+@use '~/styles/base/mixins' as *;
+@use '~/styles/base/functions' as *;
+
+.root {
+  padding-top: 120px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 2;
+}

@@ -1,0 +1,34 @@
+@use '~/styles/base/variables' as *;
+@use '~/styles/base/mixins' as *;
+@use '~/styles/base/functions' as *;
+
+.root {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: $z-index-global-header;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 #{$padding-side-pc}px;
+
+  @include mq() {
+    padding: 0 #{$padding-side-sp}px;
+  }
+}
+
+.link {
+  font-size: 24px;
+  text-decoration: underline;
+
+  & + & {
+    margin-left: 32px;
+  }
+}

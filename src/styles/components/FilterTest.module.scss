@@ -1,0 +1,25 @@
+@use '~/styles/base/variables' as *;
+@use '~/styles/base/mixins' as *;
+@use '~/styles/base/functions' as *;
+
+.select {
+  width: 100px;
+  height: 40px;
+  border: solid 1px $color-black;
+  padding: 0 20px;
+  border-radius: 100vh;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.item {
+  width: 100px;
+  height: 60px;
+  border: solid 1px $color-black;
+  padding: 10px;
+}
