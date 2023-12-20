@@ -1,26 +1,8 @@
 import { PageIndex } from '~/components/PageIndex';
+import { getMetaData } from '~/libs/metaData';
 
 export async function generateMetadata() {
-  const title = 'Next.js Template';
-  const description = 'This is Next.js Template';
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      url: 'localhost:3000',
-      siteName: title,
-      locale: 'ja_JP',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-    },
-  };
+  return getMetaData();
 }
 
 export default function Home() {

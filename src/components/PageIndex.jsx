@@ -15,6 +15,7 @@ export const PageIndex = () => {
               fill={true}
               sizes="100vw"
               alt=""
+              priority={true}
               style={{
                 height: '100%',
                 objectFit: 'cover',
